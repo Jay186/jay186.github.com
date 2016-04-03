@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="智能社 - zhinengshe.com" />
+<meta name="copyright" content="智能社 - zhinengshe.com" />
+<title>拖拽轮播</title>
+<style>
+*{ margin:0; padding:0; list-style:none; font-family: "微软雅黑","张海山锐线体简"}
+body{ background:#cacaca;}
+#div1{width:100%;height:450px; margin:0 auto; position:relative;overflow: hidden;}
+#div1 ul{ position:absolute;left:0;top:135px;}
+#div1 ul li{/* background:red;*/ float: left; position:relative;width:260px;height:179px;}
+#div1 ul li img{ width:260px;height:179px; position:absolute;left:0;top:0; /*opacity:0.5*/}
+#div1 ul li span{font-size:30px;color:#000; background:#fff; position:absolute;left:48%;top:48%;}
+</style>
+<script>
+window.onload=function(){
+	var oDiv=document.getElementById('div1');
+	var oUl=oDiv.children[0];
+	var aLi=oUl.children;
+	var aImg=oUl.getElementsByTagName('img');
+	var aSpan=oUl.getElementsByTagName('span');
+	//1.设定ul的宽
+	oUl.style.width=oUl.children.length*aLi[0].offsetWidth+'px';	
+	//2.添加拖拽
+	oUl.onmousedown=function(ev){
+		var oEvt=ev||event;
+		var disX=oEvt.clientX-oUl.offsetLeft;
+		document.onmousemove=function(ev){
+			var oEvt=ev||event;
+			var l=oEvt.clientX-disX;
+			//div.w/2 - (0+0.5)*li.w
+			if(l>oDiv.offsetWidth/2-(0+0.5)*aLi[0].offsetWidth)
+				l=oDiv.offsetWidth/2-(0+0.5)*aLi[0].offsetWidth;
+			if(l<oDiv.offsetWidth/2-(aLi.length-1+0.5)*aLi[0].offsetWidth)
+				l=oDiv.offsetWidth/2-(aLi.length-1+0.5)*aLi[0].offsetWidth;
+			oUl.style.left=l+'px';
+			
+			setSize();//控制大小
+		};	
+		document.onmouseup=function(){
+			document.onmousemove=document.onmouseup=null;	
+		};
+		return false;
+	};
+	
+	function setSize(){
+		//计算每个图到div1中线的距离，控制图片大小	
+		for(var i=0;i<aImg.length;i++){
+			//div1.w/2-(ul.left+li.left+li.w/2)
+			var dis=Math.abs(oDiv.offsetWidth/2-(oUl.offsetLeft+aLi[i].offsetLeft+aLi[i].offsetWidth/2))
+			var scale=1-dis/800	//	800假设的感应距离	
+			//aSpan[i].innerHTML=scale.toFixed(2);
+			
+			if(scale<0.5) scale=0.5;
+			
+			//控制所有的图片
+			aImg[i].style.width=520*scale+'px';
+			aImg[i].style.height=358*scale+'px';
+			aImg[i].style.marginLeft=-(aImg[i].offsetWidth-aLi[i].offsetWidth)/2+'px';
+			aImg[i].style.marginTop=-(aImg[i].offsetHeight-aLi[i].offsetHeight)/2+'px';
+			aImg[i].style.zIndex=parseInt(scale*10000);
+			aImg[i].style.opacity=scale;
+		}	
+	}
+	
+	//3.设置中心点
+	setCenter(parseInt(aLi.length/2));
+	
+	function setCenter(n){
+		//div.w/2 - (n+0.5)*li.w
+		oUl.style.left=	oDiv.offsetWidth/2-(n+0.5)*aLi[0].offsetWidth+'px';
+		setSize();
+	}
+	
+	//4.响应式
+	window.onresize=setSize;
+};
+</script>
+</head>
+
+<body>
+
+<div id="div1">
+	<ul>
+    	<li><img src="images/img3/1.jpg"><span>0</span></li>
+    	<li><img src="images/img3/2.jpg"><span>0</span></li>
+    	<li><img src="images/img3/3.jpg"><span>0</span></li>
+    	<li><img src="images/img3/4.jpg"><span>0</span></li>
+    	<li><img src="images/img3/5.jpg"><span>0</span></li>
+    	<li><img src="images/img3/6.jpg"><span>0</span></li>
+    	<li><img src="images/img3/7.jpg"><span>0</span></li>
+    	<li><img src="images/img3/8.jpg"><span>0</span></li>
+    </ul>
+</div>
+
+</body>
+</html>

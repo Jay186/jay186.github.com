@@ -1,0 +1,1669 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>车讯网</title>
+<link href="css/common.css" rel="stylesheet" />
+<link href="css/index.css" rel="stylesheet" />
+<script>
+window.onload=function(){
+	var oHot=document.getElementById('hot')
+	var aLi=oHot.getElementsByTagName('li')
+	var oBigbox=document.getElementById('bigbox')
+	var aDiv=oBigbox.getElementsByTagName('div')
+	
+	for(var i=0;i<aLi.length;i++)
+	{	
+		aLi[i].index=i;
+		aLi[i].onmouseover=function()
+		{	
+			for(var a=0;a<aLi.length;a++)
+			{
+				aLi[a].className=''	
+				aDiv[a].className='cars'
+				
+			}
+			this.className='on'
+			aDiv[this.index].className='cars show'
+			
+		}
+		}
+}
+</script>
+</head>
+<body>
+<div class="wrapper">
+	<div class="top">
+    	<div class="excel clearFix">
+        	<div class="excel_l fl">
+        	<form>
+               	通行证号<input class="excel_l_1" type="text" value=""/>
+                密码<input class="excel_l_2" type="password" value=""/>
+                <input class="excel_l_3" type="submit" value="登录"/>
+                <input class="excel_l_4" type="submit" value="注册通行证"/>
+            </form>
+            </div>
+            <div class="excel_r fr">
+            	<span><a href="#">设为主页 |</a></span>
+                <span><a href="#">网站导航 |</a></span>
+                <span><a href="#">广州车展</a></span>
+            </div>
+        </div>
+        <div class="logo clearFix">
+        	<h1 class="logo_l fl">车讯网</h1>
+            <div class="logo_r fr"><img src="images/guanggao.jpg"/ alt=""></div>
+        </div>
+        <div class="nav">
+        	<ul class="clearFix">
+            	<li class="nav_1 fl">
+                <a href="#">
+                	<p class="fl">资讯</p>
+                	<div class="fl">
+                    <span>新闻咨询</span>
+                    <span>行业咨询</span>
+                    <span>车型对比</span>
+                    <span>市场动态</span>
+                    <span>人才对比</span>
+                    <span>行车技巧</span>
+                    </div>
+                </a>
+                </li>
+                <li class="nav_2 fl">
+                <a href="#">
+                	<p class="fl">用处</p>
+                	<div class="fl">
+                    <span>维修养护</span>
+                    <span>美容装饰</span>
+                    <span>汽车图片</span>
+                    <span>汽车知识</span>
+                    <span>汽车GPS</span>
+                    <span>违章查询</span>
+                    </div>
+                </a>
+                </li>
+                <li class="nav_3 fl">
+                <a href="#">
+                	<p class="fl">购车</p>
+                	<div class="fl">
+                    <span>汽车报价</span>
+                    <span>购车参考</span>
+                    <span>对比评测</span>
+                    <span>二手市场</span>
+                    <span>保险货代</span>
+                    <span>试乘试驾</span>
+                    </div>
+                </a>
+                </li>
+                <li class="nav_4 fl">
+                <a href="#">
+                	<p class="fl">互动</p>
+                	<div class="fl">
+                    <span>车友会活动</span>
+                    <span>微博</span>
+                    <span>美图</span>
+                    <span>自驾游攻略</span>
+                    <span>论坛</span>
+                    <span>美女</span>
+                    </div>
+                </a>
+                </li>
+            </ul>	
+        
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+	<div class="search clearFix">
+    	<div class="search_l fl ">
+            <form>
+                快速找车<input class="text1" type="text" value=""/>
+                <input class="text2" type="submit" value="搜索"/>
+                <select>
+                    <option></option>
+                </select>
+                <input class="text2" type="submit" value="搜索"/>
+            </form>
+    	</div>
+        <div class="search_r fr">
+        	<span class="text3">查找车型：</span>
+            <span>按级别</span>
+            <span>按字母</span>
+            <span>按品牌</span>
+        	<span>按价格</span>
+        </div>
+    </div>
+    
+    <div class="hot" id="hot">
+    	<ul class=" clearFix">
+            <li class="hot_1" id="on"><a href="#">热门车型</a></li>
+            <li><a href="#">5万一下</a></li>
+            <li><a href="#">5-10万</a></li>
+            <li><a href="#">10-15万</a></li>
+            <li><a href="#">15-20万</a></li>
+            <li><a href="#">20-25万</a></li>
+            <li><a href="#">25-30万</a></li>
+            <li style="border-right:none"><a href="#">30万以上</a></li>
+        </ul>
+    </div>
+    <div id="bigbox">
+    	<div class="cars show">
+        	<ul class="dotted clearFix">
+                <p class="bigtext fl">
+                    <a href="#">两厢车</a>
+                </p>
+                <li class="border">
+                    <p><a style="color:#F00" href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                 <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+        </ul>
+        	<ul class="clearFix">
+                <p class="bigtext fl">
+                    <a href="#">两厢车</a>
+                </p>
+                <li class="border">
+                    <p><a style="color:#F00" href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                 <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+        
+        </ul>
+        </div>
+        <div class="cars none">
+                <ul class="dotted clearFix">
+                <p class="bigtext fl">
+                    <a href="#">两厢车</a>
+                </p>
+                <li class="border">
+                    <p><a style="color:#F00" href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                 <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+            
+            </ul>
+                <ul class="clearFix">
+                <p class="bigtext fl">
+                    <a href="#">两厢车</a>
+                </p>
+                <li class="border">
+                    <p><a style="color:#F00" href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                 <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+            
+            </ul>
+            </div>
+        <div class="cars none">
+                <ul class="dotted clearFix">
+                <p class="bigtext fl">
+                    <a href="#">两厢车</a>
+                </p>
+                <li class="border">
+                    <p><a style="color:#F00" href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                 <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+            
+            </ul>
+                <ul class="clearFix">
+                <p class="bigtext fl">
+                    <a href="#">两厢车</a>
+                </p>
+                <li class="border">
+                    <p><a style="color:#F00" href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                 <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+            
+            </ul>
+            </div>
+        <div class="cars none">
+                <ul class="dotted clearFix">
+                <p class="bigtext fl">
+                    <a href="#">两厢车</a>
+                </p>
+                <li class="border">
+                    <p><a style="color:#F00" href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                 <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+            
+            </ul>
+                <ul class="clearFix">
+                <p class="bigtext fl">
+                    <a href="#">两厢车</a>
+                </p>
+                <li class="border">
+                    <p><a style="color:#F00" href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                 <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+            
+            </ul>
+            </div>
+        <div class="cars none">
+                <ul class="dotted clearFix">
+                <p class="bigtext fl">
+                    <a href="#">两厢车</a>
+                </p>
+                <li class="border">
+                    <p><a style="color:#F00" href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                 <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+            
+            </ul>
+                <ul class="clearFix">
+                <p class="bigtext fl">
+                    <a href="#">两厢车</a>
+                </p>
+                <li class="border">
+                    <p><a style="color:#F00" href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                 <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+            
+            </ul>
+            </div>
+        <div class="cars none">
+                <ul class="dotted clearFix">
+                <p class="bigtext fl">
+                    <a href="#">两厢车</a>
+                </p>
+                <li class="border">
+                    <p><a style="color:#F00" href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                 <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+            
+            </ul>
+                <ul class="clearFix">
+                <p class="bigtext fl">
+                    <a href="#">两厢车</a>
+                </p>
+                <li class="border">
+                    <p><a style="color:#F00" href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                 <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+            
+            </ul>
+            </div>
+        <div class="cars none">
+                <ul class="dotted clearFix">
+                <p class="bigtext fl">
+                    <a href="#">两厢车</a>
+                </p>
+                <li class="border">
+                    <p><a style="color:#F00" href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                 <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+            
+            </ul>
+                <ul class="clearFix">
+                <p class="bigtext fl">
+                    <a href="#">两厢车</a>
+                </p>
+                <li class="border">
+                    <p><a style="color:#F00" href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                 <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+            
+            </ul>
+            </div>
+        <div class="cars none">
+                <ul class="dotted clearFix">
+                <p class="bigtext fl">
+                    <a href="#">两厢车</a>
+                </p>
+                <li class="border">
+                    <p><a style="color:#F00" href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                 <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+            
+            </ul>
+                <ul class="clearFix">
+                <p class="bigtext fl">
+                    <a href="#">两厢车</a>
+                </p>
+                <li class="border">
+                    <p><a style="color:#F00" href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+                 <li>
+                    <p><a href="#">凯越</a></p>
+                    <span><a href="#">报价</a></span>
+                    <span><a href="#">图片</a></span>
+                    <span><a href="#">论坛</a></span>
+                </li>
+            
+            </ul>
+            </div>
+    </div>   
+</div>
+<div class="wrapper">
+	<div class="box clearFix">
+    	<div class="box_l fl">
+        	<div><img width="350" height="33" src="images/guanggao1.jpg" alt=""/></div>
+        	<div class="box_l_2">
+            	<div><img width="350" height="244" src="images/pcauto.jpg" alt=""/></div>
+                <p>混血王子 PCauto试驾起亚凯尊</p>
+            </div>
+            <div class="box_l_3">
+            	<div class="box_l_3_top clearFix">
+                	<p class="fl">汽车视频</p>
+                    <span class="fr">更多>></span>
+                </div>
+                <div class="box_l_3_bottom clearFix">
+                	<ul>
+                    	<li>
+                        	<a href="#">
+                            	<img src="images/car1.jpg" alt=""/>
+                                <p>奥迪A8L外观紧凑感强更年轻化</p>
+                            </a>
+                        </li>
+                        
+                    	<li>
+                        	<a href="#">
+                            	<img src="images/car1.jpg" alt=""/>
+                                <p>奥迪A8L外观紧凑感强更年轻化</p>
+                            </a>
+                        </li>
+                        
+                    	<li>
+                        	<a href="#">
+                            	<img src="images/car1.jpg" alt=""/>
+                                <p>奥迪A8L外观紧凑感强更年轻化</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="box_c fl">
+        	<div class="box_c_top">
+            	<h2>东风标致508豪华版更值得选择</h2>
+                <p>静态评测东风标致508 | 到店实拍东风标致508</p>
+                <h2 class="mt">初定在2012年国产 两厢版思域落户广本</h2>
+                <p>两厢思域广本东本换车内幕 | 国产新思域配置申报图</p>
+            </div>
+            <div class="box_c_bottom clearFix">
+            	<div class="box_c_bottom_t">
+                    <img width="102" height="77" src="images/car4.jpg" alt=""/>
+                    <div>
+                        <h4>奥迪Q3概念车</h4>
+                        <p>奥迪最新跑车R4谍照之首次曝光 
+    PCauto资深车友老嫖之大婚特辑提
+    车作业：新骏捷1.8T终...</p>
+                	</div>
+                </div>    
+                <ul>
+                	<li>
+                    	<a href="#">
+                        	曝丰田换代凯美瑞预告图 雷诺推限量版Twingo
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#">
+                        	曝丰田换代凯美瑞预告图 雷诺推限量版Twingo
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#">
+                        	曝丰田换代凯美瑞预告图 雷诺推限量版Twingo
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#">
+                        	曝丰田换代凯美瑞预告图 雷诺推限量版Twingo
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#">
+                        	曝丰田换代凯美瑞预告图 雷诺推限量版Twingo
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#">
+                        	曝丰田换代凯美瑞预告图 雷诺推限量版Twingo
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#">
+                        	曝丰田换代凯美瑞预告图 雷诺推限量版Twingo
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#">
+                        	曝丰田换代凯美瑞预告图 雷诺推限量版Twingo
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    	<div class="box_r fr">
+        	<div><img width="228" height="119" src="images/car5.jpg"/></div>
+        	<div class="box_r_b clearFix">
+            	<p class="fl">多车选择</p>
+                <span class="fr">更多>></span>
+            </div>
+            <ul>
+            	<li>
+                	<a href="#">自主</a>
+                    <a href="#">奇瑞</a>
+                    <a href="#">长城</a>
+                    <a href="#">长安</a>
+                    <a href="#">雪铁龙</a>
+                </li>
+                <li>
+                	<a href="#">自主</a>
+                    <a href="#">奇瑞</a>
+                    <a href="#">长城</a>
+                    <a href="#">长安</a>
+                    <a href="#">雪铁龙</a>
+                </li>
+                <li>
+                	<a href="#">自主</a>
+                    <a href="#">奇瑞</a>
+                    <a href="#">长城</a>
+                    <a href="#">长安</a>
+                    <a href="#">雪铁龙</a>
+                </li>
+                <li>
+                	<a href="#">自主</a>
+                    <a href="#">奇瑞</a>
+                    <a href="#">长城</a>
+                    <a href="#">长安</a>
+                    <a href="#">雪铁龙</a>
+                </li>
+                <li>
+                	<a href="#">自主</a>
+                    <a href="#">奇瑞</a>
+                    <a href="#">长城</a>
+                    <a href="#">长安</a>
+                    <a href="#">雪铁龙</a>
+                </li>
+                <li>
+                	<a href="#">自主</a>
+                    <a href="#">奇瑞</a>
+                    <a href="#">长城</a>
+                    <a href="#">长安</a>
+                    <a href="#">雪铁龙</a>
+                </li>
+                <li>
+                	<a href="#">自主</a>
+                    <a href="#">奇瑞</a>
+                    <a href="#">长城</a>
+                    <a href="#">长安</a>
+                    <a href="#">雪铁龙</a>
+                </li>
+                <li>
+                	<a href="#">自主</a>
+                    <a href="#">奇瑞</a>
+                    <a href="#">长城</a>
+                    <a href="#">长安</a>
+                    <a href="#">雪铁龙</a>
+                </li>
+                <li>
+                	<a href="#">自主</a>
+                    <a href="#">奇瑞</a>
+                    <a href="#">长城</a>
+                    <a href="#">长安</a>
+                    <a href="#">雪铁龙</a>
+                </li>
+                <li>
+                	<a href="#">自主</a>
+                    <a href="#">奇瑞</a>
+                    <a href="#">长城</a>
+                    <a href="#">长安</a>
+                    <a href="#">雪铁龙</a>
+                </li>
+                <li>
+                	<a href="#">自主</a>
+                    <a href="#">奇瑞</a>
+                    <a href="#">长城</a>
+                    <a href="#">长安</a>
+                    <a href="#">雪铁龙</a>
+                </li>
+            </ul>
+        </div>
+	</div>
+</div>
+<div class="wrapper">
+	<div class="bk_box clearFix">
+    	<div class="bk_box_l fl">
+        	<div class="bk_box_l_t">
+            	<p class="fl">论坛博客</p>
+                <span class="fr">更多>></span>
+            </div>
+            <ul>
+            	<li>
+                	<img width="104" height="79" src="images/car6.jpg" alt=""/>
+                    <p>随着三厢版换代思域在国内消息逐渐
+明朗，又有国内媒体报道称，两厢思
+域已确定在广汽本田生产，初定的上
+市时间为2012年。<a href="#">[详细]</a></p>
+                </li>
+                <li>
+                	<img width="104" height="79" src="images/car6.jpg" alt=""/>
+                    <p>随着三厢版换代思域在国内消息逐渐
+明朗，又有国内媒体报道称，两厢思
+域已确定在广汽本田生产，初定的上
+市时间为2012年。<a href="#">[详细]</a></p>
+                </li>
+            </ul>
+            <p class="text">
+            	有奖观世博征网友看馆作业 旧车换新颜-雅力士装饰征集</br> 
+				比亚迪全系车型征文赢车模 汉兰达品质生活 征作业送车模</br> 
+				美丽大中华网友摄影师招募 太平洋汽车网有奖活动进行中</br> 
+            </p>
+        </div>	
+        <div class="bk_box_c fl">
+        	<div class="buy clearFix">
+            	<p  class="fl">购车</p>
+                <span class="fr">汽车报价</span>
+                <span class="fr">车型大全 |</span>
+                <span class="fr">全国车市 |</span>
+            </div>
+            <ul>
+            	<li>
+                	<a href="#">新奥迪S6谍照曝光 9月亮相国产奔驰GLK将于十月投</a>
+                </li>
+                <li>
+                	<a href="#">新奥迪S6谍照曝光 9月亮相国产奔驰GLK将于十月投</a>
+                </li>
+                <li>
+                	<a href="#">新奥迪S6谍照曝光 9月亮相国产奔驰GLK将于十月投</a>
+                </li>
+                <li>
+                	<a href="#">新奥迪S6谍照曝光 9月亮相国产奔驰GLK将于十月投</a>
+                </li>
+                <li>
+                	<a href="#">新奥迪S6谍照曝光 9月亮相国产奔驰GLK将于十月投</a>
+                </li>
+                <li>
+                	<a href="#">新奥迪S6谍照曝光 9月亮相国产奔驰GLK将于十月投</a>
+                </li>
+                <li>
+                	<a href="#">新奥迪S6谍照曝光 9月亮相国产奔驰GLK将于十月投</a>
+                </li>
+                <li>
+                	<a href="#">新奥迪S6谍照曝光 9月亮相国产奔驰GLK将于十月投</a>
+                </li>
+                <li>
+                	<a href="#">新奥迪S6谍照曝光 9月亮相国产奔驰GLK将于十月投</a>
+                </li>
+                <li>
+                	<a href="#">新奥迪S6谍照曝光 9月亮相国产奔驰GLK将于十月投</a>
+                </li>
+                <li>
+                	<a href="#">新奥迪S6谍照曝光 9月亮相国产奔驰GLK将于十月投</a>
+                </li>
+                <li>
+                	<a href="#">新奥迪S6谍照曝光 9月亮相国产奔驰GLK将于十月投</a>
+                </li>
+            </ul>
+        
+        </div>	
+        <div class="bk_box_r fl">
+        	<div class="bk_box_r_t">
+            	<p class="fl">新车上市</p>
+            	<span class="fr">更多>></span>
+            </div>
+            <ul>
+            	<li class="clearFix">
+                	<a href="#"><img width="80" height="60" src="images/car8.jpg" alt=""/></a>
+                    <div class="tex clearFix">
+                        <b>2001款世嘉</b>
+                        <p>报价：10.88万起</p>
+                        <span><a href="#">频道>></a></span><span><a href="#">论坛>></a></span>
+                    </div>    
+                </li>
+            	<li class="clearFix">
+                	<a href="#"><img width="80" height="60" src="images/car8.jpg" alt=""/></a>
+                    <div class="tex clearFix">
+                        <b>2001款世嘉</b>
+                        <p>报价：10.88万起</p>
+                        <span><a href="#">频道>></a></span><span><a href="#">论坛>></a></span>
+                    </div>    
+                </li>
+            </ul>
+            <div class="bk_box_r_b">
+            	<p><a href="#">终于买了新车500公里感受新车</a></p>
+                <p><a href="#">终于买了新车500公里感受新车</a></p>
+                <p><a href="#">终于买了新车500公里感受新车</a></p>
+                <p><a href="#">终于买了新车500公里感受新车</a></p>
+                <p><a href="#">终于买了新车500公里感受新车</a></p>
+            
+            </div>
+        
+        </div>	
+    </div>
+
+</div>
+<div class="wrapper">
+	<div class="guangkao"><img src="images/guanggao3.jpg" alt=""/></div>
+</div>
+<div class="wrapper">
+	<div class="sj_box">
+    	<div class="sj_box_t">
+        	<p>试驾评测</p>
+            <ul>
+            	<li>
+                	<a href="#">对比评测</a>
+                </li>
+                <li>
+                	<a href="#">评测中心</a>
+                </li>
+                <li>
+                	<a href="#">视频评测</a>
+                </li>
+                <li>
+                	<a href="#">国内试驾</a>
+                </li>
+                <li>
+                	<a href="#">国外试驾</a>
+                </li>
+                <li>
+                	<a href="#">对比试驾</a>
+                </li>
+                <li>
+                	<a href="#">报价</a>
+                </li>
+                <li>
+                	<a href="#">经销商</a>
+                </li>
+                <li>
+                	<a href="#">团购</a>
+                </li>
+                <li>
+                	<a href="#">销量</a>
+                </li>
+                <li>
+                	<a href="#">保险</a>
+                </li>
+                <li>
+                	<a href="#">车贷</a>
+                </li>
+            </ul>
+        </div>
+        <div class="sj_box_b clearFix">
+        	<div class="sj_box_b_l fl">
+            	<div class="sj_box_b_l_t">
+                    <img width="348" height="194" src="images/car10.jpg" alt=""/>
+                    <p>值得期待 华晨中华H530上市前抢先实拍</p>
+                </div>
+                <div class="sj_box_b_l_b">
+                	<div class="clearFix">
+                    	<p class="fl">多车对比</p>
+                        <span class="fr"><a href="#">跟多>></a></span>
+                    </div>
+                    <ul>
+                        <li class="clearFix">
+                            <a href="#">
+                            <span class="fl">家用兼商务谁更称职 新迈腾VS新君越 </span>
+                            <span class="fr">08月21日</span>
+                            </a>
+                        </li>
+                        <li class="clearFix">
+                            <a href="#">
+                            <span class="fl">家用兼商务谁更称职 新迈腾VS新君越 </span>
+                            <span class="fr">08月21日</span>
+                            </a>
+                        </li>
+                        <li class="clearFix">
+                            <a href="#">
+                            <span class="fl">家用兼商务谁更称职 新迈腾VS新君越 </span>
+                            <span class="fr">08月21日</span>
+                            </a>
+                        </li>
+                        <li class="clearFix">
+                            <a href="#">
+                            <span class="fl">家用兼商务谁更称职 新迈腾VS新君越 </span>
+                            <span class="fr">08月21日</span>
+                            </a>
+                        </li>
+                        <li class="clearFix">
+                            <a href="#">
+                            <span class="fl">家用兼商务谁更称职 新迈腾VS新君越 </span>
+                            <span class="fr">08月21日</span>
+                            </a>
+                        </li>
+                	</ul>
+                </div>
+            </div>
+        	<div class="sj_box_b_c fl">
+            	<div class="sj_box_b_c_t">
+                    <div class="clearFix">
+                        <p class="fl">初步海选</p>
+                        <span class="fr"><a href="#">跟多>></a></span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">安全与便捷 2011款迈腾最高优惠10000元
+    </a>
+                        </li>
+                        <li>
+                            <a href="#">安全与便捷 2011款迈腾最高优惠10000元
+    </a>
+                        </li>
+                        <li>
+                            <a href="#">安全与便捷 2011款迈腾最高优惠10000元
+    </a>
+                        </li>
+                        <li>
+                            <a href="#">安全与便捷 2011款迈腾最高优惠10000元
+    </a>
+                        </li>
+                        <li>
+                            <a href="#">安全与便捷 2011款迈腾最高优惠10000元
+    </a>
+                        </li>
+                        <li>
+                            <a href="#">安全与便捷 2011款迈腾最高优惠10000元
+    </a>
+                        </li>
+                        <li>
+                            <a href="#">安全与便捷 2011款迈腾最高优惠10000元
+    </a>
+                        </li>
+                        <li>
+                            <a href="#">安全与便捷 2011款迈腾最高优惠10000元
+    </a>
+                        </li>
+                    </ul>
+                </div>  
+                <div class="sj_box_b_c_t sj_box_b_c_b">
+                    <div class="clearFix">
+                        <p class="fl">初步海选</p>
+                        <span class="fr"><a href="#">跟多>></a></span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">安全与便捷 2011款迈腾最高优惠10000元
+    </a>
+                        </li>
+                        <li>
+                            <a href="#">安全与便捷 2011款迈腾最高优惠10000元
+    </a>
+                        </li>
+                        <li>
+                            <a href="#">安全与便捷 2011款迈腾最高优惠10000元
+    </a>
+                        </li>
+                        <li>
+                            <a href="#">安全与便捷 2011款迈腾最高优惠10000元
+    </a>
+                        </li>
+                        <li>
+                            <a href="#">安全与便捷 2011款迈腾最高优惠10000元
+    </a>
+                        </li>
+                    </ul>
+                </div>      
+            </div>
+            <div class="sj_box_b_r fr">
+            	<div class="sj_box_b_r_t">
+                    <div class="clearFix">
+                        <p class="fl">热门排行</p>
+                        <span class="fr"><a href="#">跟多>></a></span>
+                    </div>
+                </div> 
+                <ul class="sj_box_b_r_b">
+                	<li class="clearFix">
+                    	<a href="#">
+                        	<span class="fl">1</span>
+                            <p class="fl">25万内欧美日韩SUV导购</p>
+                        </a>
+                        <div class="show clearFix">
+                        	<img class="fl" width="80" height="60" src="images/car11.jpg" alt=""/>
+                            <p>由于具备了霸气的外观造型、宽敞的车... <a href="#">详细</a></p>
+                        </div>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+	<div class="guanggao4">
+		<img src="images/guanggao4.jpg" alt=""/>
+    </div>
+</div>
+<div class="wrapper">
+	<div class="dg">
+        <div class="sj_box_t">
+          <p>试驾评测</p>
+          <ul>
+              <li>
+                  <a href="#">对比评测</a>
+              </li>
+              <li>
+                  <a href="#">评测中心</a>
+              </li>
+              <li>
+                  <a href="#">视频评测</a>
+              </li>
+              <li>
+                  <a href="#">国内试驾</a>
+              </li>
+              <li>
+                  <a href="#">国外试驾</a>
+              </li>
+              <li>
+                  <a href="#">对比试驾</a>
+              </li>
+              <li>
+                  <a href="#">报价</a>
+              </li>
+              <li>
+                  <a href="#">经销商</a>
+              </li>
+              <li>
+                  <a href="#">团购</a>
+              </li>
+              <li>
+                  <a href="#">销量</a>
+              </li>
+              <li>
+                  <a href="#">保险</a>
+              </li>
+              <li>
+                  <a href="#">车贷</a>
+              </li>
+          </ul>
+        </div>
+        <div class="dg_t">
+        	<span><a href="#">热门车型推荐</a></span>
+            <span><a href="#">5万以下</a></span>
+            <span><a href="#">5-10万</a></span>
+            <span><a href="#">10-15万</a></span>
+            <span><a href="#">15-20万</a></span>
+            <span><a href="#">20-25万</a></span>
+            <span><a href="#">25-30万</a></span>
+            <span><a href="#">30万以上SUV</a></span>
+            <span><a href="#">Mpv</a></span>
+        </div>
+        <div class="dg_b">
+        	<ul class="clearFix">
+            	<li class="clearFix">
+                	<a href="#">
+                    	<div class="first fl">
+                    	<img src="images/car12.jpg" alt=""/>
+                        <p>三菱翼神</p>
+                        </div>
+                    </a>
+                    <div class="second fl">
+                    	<h4><a href="#">车型频道>></a></h4> 
+                        <h4><a href="#">参数配置>></a></h4> 
+                        <h4><a href="#">试驾报告>></a></h4> 
+                        <h4><a href="#">最新报价>></a></h4> 
+                   	</div>
+                </li>
+                <li class="clearFix">
+                	<a href="#">
+                    	<div class="first fl">
+                    	<img src="images/car12.jpg" alt=""/>
+                        <p>三菱翼神</p>
+                        </div>
+                    </a>
+                    <div class="second fl">
+                    	<h4><a href="#">车型频道>></a></h4> 
+                        <h4><a href="#">参数配置>></a></h4> 
+                        <h4><a href="#">试驾报告>></a></h4> 
+                        <h4><a href="#">最新报价>></a></h4> 
+                   	</div>
+                </li>
+                <li class="clearFix">
+                	<a href="#">
+                    	<div class="first fl">
+                    	<img src="images/car12.jpg" alt=""/>
+                        <p>三菱翼神</p>
+                        </div>
+                    </a>
+                    <div class="second fl">
+                    	<h4><a href="#">车型频道>></a></h4> 
+                        <h4><a href="#">参数配置>></a></h4> 
+                        <h4><a href="#">试驾报告>></a></h4> 
+                        <h4><a href="#">最新报价>></a></h4> 
+                   	</div>
+                </li>
+                <li class="clearFix">
+                	<a href="#">
+                    	<div class="first fl">
+                    	<img src="images/car12.jpg" alt=""/>
+                        <p>三菱翼神</p>
+                        </div>
+                    </a>
+                    <div class="second fl">
+                    	<h4><a href="#">车型频道>></a></h4> 
+                        <h4><a href="#">参数配置>></a></h4> 
+                        <h4><a href="#">试驾报告>></a></h4> 
+                        <h4><a href="#">最新报价>></a></h4> 
+                   	</div>
+                </li>
+                
+            </ul>
+        	
+        </div>
+	</div>
+</div>
+<div class="wrapper">
+	<div class="news_box clearFix">
+    	<div class="news_box_l fl">
+            <div class="news_t clearFix">
+                <p class="fl">汽车新闻</p>
+                <span class="fr"><a href="#">更多>></a></span>
+            </div>
+            <ul>
+            	<li>
+                	<a href="#">
+                    	ABS可能失效 长安福特召回致胜及S-MAX
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                    	ABS可能失效 长安福特召回致胜及S-MAX
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                    	ABS可能失效 长安福特召回致胜及S-MAX
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                    	ABS可能失效 长安福特召回致胜及S-MAX
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                    	ABS可能失效 长安福特召回致胜及S-MAX
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                    	ABS可能失效 长安福特召回致胜及S-MAX
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                    	ABS可能失效 长安福特召回致胜及S-MAX
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                    	ABS可能失效 长安福特召回致胜及S-MAX
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                    	ABS可能失效 长安福特召回致胜及S-MAX
+                    </a>
+                </li>
+            </ul>
+        </div>    
+        <div class="news_box_l fl">
+            <div class="news_t clearFix">
+                <p class="fl">汽车新闻</p>
+                <span class="fr"><a href="#">更多>></a></span>
+            </div>
+            <ul>
+            	<li>
+                	<a href="#">
+                    	ABS可能失效 长安福特召回致胜及S-MAX
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                    	ABS可能失效 长安福特召回致胜及S-MAX
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                    	ABS可能失效 长安福特召回致胜及S-MAX
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                    	ABS可能失效 长安福特召回致胜及S-MAX
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                    	ABS可能失效 长安福特召回致胜及S-MAX
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                    	ABS可能失效 长安福特召回致胜及S-MAX
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                    	ABS可能失效 长安福特召回致胜及S-MAX
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                    	ABS可能失效 长安福特召回致胜及S-MAX
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                    	ABS可能失效 长安福特召回致胜及S-MAX
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="news_box_r fl"><img src="images/ditu.jpg"/></div>
+	</div>
+</div>
+<div class="wrapper">
+	<div class="yqlj clearFix">
+    	<p class="fl">友情链接</p>
+        <span class="fr"><a href="">更多>></a></span>
+    </div>
+    <div class="copyright">
+        <p>
+        新浪汽车 | 网易汽车 | 腾讯汽车 | 猫扑汽车 | 凤凰网汽车 | 汽车之家 | 汽车中国 | 爱卡汽车 | 我想去导航 | 卓众汽车网 | 21cn汽车 | CNTV汽车台 | 中国二手车城
+    二手车网 | 汽车殿堂 | 新车评网 | 无敌改装网 | 我爱车 | 华夏二手车 | 万车网 | 众车网 | 好车网 | 南方网 | 驾驶员考试 | 第一车网 | 户外资料网 | 东风日产北京 
+    广州二手车 | 龙江二手车 | 1775二手车 | 搜车网 | 汽车之友 | 驾校一点通 | 淘淘二手车 | 车坛百分百| 中国二手车城 | Hao123导航 | 我想去导航 | 中国汽车工程学会 
+        </p>
+        <span>车讯网:　关于我们　┊　招贤纳士　┊　友情链接　┊　意见反馈　┊　 车商道　┊　 新闻归档</span>
+        <b>查汽车报价，赏汽车图片，看汽车视频，泡汽车论坛，参加汽车团购，就来车讯网！</br>
+Copyright © 2008-2011 版权所有 车讯网 京ICP备080418号 北京市朝阳分局网安备案编号：110105005131</b>
+   	</div>    
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>3D图片环</title>
+<link href="style/zns_common.css" type="text/css" rel="stylesheet" />
+
+<script src="js/zns_demo.js"></script>
+</head>
+
+<body>
+<div id="div1">
+	<strong id="div2"></strong>
+</div>
+<style>
+body {
+	_background-image: url(image/bg.jpg);
+	_background-attachment: fixed;
+} 
+.znsCom{
+	width:100%;
+	clear:both;
+	overflow:hidden;
+	position:fixed;
+	bottom:20px;
+	text-align:center;
+	color:#FFF;
+	font-family:Verdana;
+	_position: absolute;  
+	_top: expression(document.documentElement.clientHeight - document.getElementById('znsCom').offsetHeight - 20 + "px");
+	z-index:99999;
+}
+.znsCom a{
+	color:#FFF;
+	text-decoration:none;
+}
+</style>
+
+</body>
+</html>

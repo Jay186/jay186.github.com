@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="智能社 - zhinengshe.com" />
+<meta name="copyright" content="智能社 - zhinengshe.com" />
+<title>canvas报表</title>
+<style>
+body{background:#000;}
+#c1{background:#fff;}
+</style>
+<script>
+window.onload = function(){
+	var oC = document.getElementById("c1"); 
+	var gd = oC.getContext("2d");
+	
+	var arr = [100,200,300,260,180,80,120];
+	
+	var space = oC.width/(4*arr.length - 1);
+	var w = 3*space;
+	
+	var iMax = Math.max.apply(null,arr);
+	
+	var arrH = [];
+	for(var i = 0; i < arr.length; i++){
+		arrH.push(arr[i]/iMax*oC.height);
+	}
+	
+	for(var i = 0; i < arrH.length; i++){
+		var r = parseInt(Math.random()*256);
+		var g = parseInt(Math.random()*256);
+		var b = parseInt(Math.random()*256);
+		gd.fillStyle = "rgb("+r+","+g+","+b+")";
+		gd.fillRect((w+space)*i,oC.height - arrH[i],w,arrH[i]);
+		gd.strokeRect((w+space)*i,oC.height - arrH[i],w,arrH[i]);
+	}
+	
+	
+	
+	 
+};
+</script>
+</head>
+
+<body>
+<canvas id="c1" width="800" height="500"></canvas>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+@charset "utf-8";
+/*
+    智能社UI库，仅用于教学课件中的案例书写。
+    版权所有 2013-9-18 - beta1
+	
+	http://www.zhinengshe.com/
+	http://bbs.zhinengshe.com/
+*/
+*{margin:0;padding:0;}
+body{font-size:12px;}
+img{border:none;}
+li{list-style:none;}
+input,select,textarea{outline:none; border:none; background:#FFF;}
+textarea{resize:none;}
+a{text-decoration:none;}
+em,i{font-style:normal;}
+
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
+.fl{float:left;}
+.fr{float:right;}
+
+
+/*边框*/
+.ui_gb_solid{border-width: 1px; border-style: solid;}
+.ui_gb_b{border-width:0 0 1px 0;}
+
+/*小样式*/
+.fix{position:fixed;}
+.abs{position:absolute;}
+.shadow{box-shadow:0 0 2px rgba(0,0,0,.3);}
+.txtCen{text-align:center;}
+.show{display:block;}
+.hide{display:none;}
+
+/*下拉*/
+.ui_toolbar{position: relative;}
+.ui_tool_edit{z-index: 30;position: absolute;width: 100%;background: #fff;cursor: pointer;}
+.ui_tool_item{height: 24px;line-height: 24px;font-size: 12px;color: #666;display: block;}
+.ui_tool_item:hover{background:#CCC;}
+
+/*搜索*/
+.ui_search_box{ display: inline; float: left; margin: 0 5px 0 8px; position: relative;}
+.ui_search_sr{ padding: 0 6px;height:100%; *line-height: 100%; font-size: 16px; font-family: arial;}
+.ui_search_bd{display: none; position: absolute; width: 100%; left: -1px; background: #FFF; top: 30px;border: #999 solid 1px; font-size:14px;}
+.ui_search_bd a{display:block; padding:0 15px; height:24px; line-height:24px; color:#000;}
+.ui_search_bd a:hover{background-color:#CCC;}
+
+
+
+
+.ui_toggle{width:0; height:0; overflow:hidden;border-style:solid; border-color:#666 transparent transparent transparent; border-width:4px; font-style:normal; font-size:0; line-height:0; position:absolute;}
+.ui_toggle_hover{border-color:transparent transparent #666 transparent;}
+
+/*底部*/
+.ui_bottom{text-align:center;}
+
+
+
+/*常用间距*/
+.hr_5,.hr_10,.hr_20,.hr_30{overflow:hidden;}
+.hr_5{height:5px;}
+.hr_10{height:10px;}
+.hr_20{height:20px;}
+.hr_30{height:30px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

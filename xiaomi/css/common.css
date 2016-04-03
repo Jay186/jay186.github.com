@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ margin:0; padding:0; }
+a{ text-decoration:none; }
+li{ list-style:none; }
+img{ display:block; }
+.fl{ float:left; }
+.fr{ float:right; }
+.clearFix:after{ content:''; display:block; clear:both; }
+
+body{ font-size:14px; font-family:"\5FAE\8F6F\96C5\9ED1"; }
+a{ color:#424242; }
+
+.wrapper{ width:1226px; margin:0 auto;}
+
+/*公用颜色*/

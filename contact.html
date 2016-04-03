@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="智能社 - zhinengshe.com" />
+<meta name="copyright" content="智能社 - zhinengshe.com" />
+<title>周界个人作品</title>
+<style>
+body,div,h1,h2,h3,h4,h5,h6,p,ul,ol,li,dl,dd,dt,span,a,b,em,i,strong,img{ padding:0; margin:0;}
+li{ list-style:none;}
+a{ text-decoration:none;}
+textarea{ resize:none; }
+input,select,textarea{ outline:none; }
+img{ border:0;}
+img,input,select,textarea{ vertical-align:top; }
+
+.fl{ float:left; display:inline;}
+.fr{ float:right; display:inline;}
+.clearFix:after{ content:''; display:block; clear:both;}
+.clearFix{ zoom:1;}
+
+body{ font-size:12px; font-family:'\5FAE\8F6F\96C5\9ED1';}
+.wrapper{ width:1110px; margin:0 auto; }
+
+#ul1{ position:relative; width:1110px; height:114px;background:#05a6b3; border-radius:20px;}
+#ul1 li{ position:relative; z-index:2;float:left;width:220px; height:114px; line-height:114px; text-align:center; border-left: 2px ridge rgba(98, 201, 209, 0.298039);border-radius:20px;}
+#ul1 li a{ float:left; width:100px; height:100px;margin: 0px 50px; font-size:15px; color:#FFF; font-weight:bold;}
+#ul1 li.Navbox{ position:absolute;left:0;top:0; background:#0bc2d1; z-index:1;}
+
+/*联系我*/
+.contact-left{ width:500px; float:left;}
+.contact-right{ width:500px; float:left; }
+.Message{ width:100%; height:202px; margin-left:20px;}
+.text{ width:100%; height:50px; margin-bottom:20px; }
+.xinxi{ width:100%; text-align:center; font-size:16px; margin-top:50px; margin-bottom:50px;color:#fff;}
+.xinxi li{ margin-bottom:10px;}
+.xinxi b{ font-size:18px;}
+</style>
+<script src="js/common.js"></script>
+<script>
+window.onload=function(){
+	nav('ul1');
+}
+</script>
+</head>
+<body bgcolor="#000">
+    <div class="wrapper">
+        <ul id="ul1">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="zuoping.html">作品</a></li>
+            <li><a href="skill.html" />skill</a></li>
+            <li><a href="contact.html" />联系我</a></li>
+            <li><a href="" />更多>></a></li>
+            <li class="Navbox"></li>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <ol class="xinxi">
+            <li>
+            	<b>Name</b>:周界
+            </li>
+            <li>
+            	<b>Num</b>:13052102767
+            </li>
+            <li>
+            	<b>E-mail</b>:zhoujie407x@126.com
+            </li>
+        </ol>
+        <form>
+             <div class="col-md-6 contact-left">
+                 <input type="text" class="text" value="Name *" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Name *';}">
+                 <input type="text" class="text" value="Email *" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Email *';}">
+                 <input type="text" class="text" value="phone *" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Phone *';}">
+             </div>
+             <div class="col-md-6 contact-right">
+                 <textarea  value="Message"  class="Message" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Message';}">Message *</textarea>
+                 <input style=" width:100px; height:35px; margin-left:425px; margin-top:20px" type="submit" value="Send Message"/>
+             </div>
+             <div class="clearfix"> </div>
+         </form>
+
+    </div>
+</body>
+</html>

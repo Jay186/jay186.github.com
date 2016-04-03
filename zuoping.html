@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="智能社 - zhinengshe.com" />
+<meta name="copyright" content="智能社 - zhinengshe.com" />
+<title>周界个人作品</title>
+<style>
+body,div,h1,h2,h3,h4,h5,h6,p,ul,ol,li,dl,dd,dt,span,a,b,em,i,strong,img{ padding:0; margin:0;}
+li{ list-style:none;}
+a{ text-decoration:none;}
+textarea{ resize:none; }
+input,select,textarea{ outline:none; }
+img{ border:0;}
+img,input,select,textarea{ vertical-align:top; }
+
+.fl{ float:left; display:inline;}
+.fr{ float:right; display:inline;}
+.clearFix:after{ content:''; display:block; clear:both;}
+.clearFix{ zoom:1;}
+
+body{ font-size:12px; font-family:'\5FAE\8F6F\96C5\9ED1';}
+.wrapper{ width:1110px; margin:0 auto; }
+
+#ul1{ position:relative; width:1110px; height:114px;background:#05a6b3; border-radius:20px;}
+#ul1 li{ position:relative; z-index:2;float:left;width:220px; height:114px; line-height:114px; text-align:center; border-left: 2px ridge rgba(98, 201, 209, 0.298039);border-radius:20px;}
+#ul1 li a{ float:left; width:100px; height:100px;margin: 0px 50px; font-size:15px; color:#FFF; font-weight:bold;}
+#ul1 li.Navbox{ position:absolute;left:0;top:0; background:#0bc2d1; z-index:1;}
+
+/*拉钩特效*/
+
+.box_l { width:840px;border-radius:20px;}
+.box_l li{ width:400px; height:250px;border-radius:20px; margin:10px; float:left; position:relative; }
+.box_l li .bg{ width:400px; height:250px; background:#000;position:absolute; left:0; top:270px; border-radius:20px;font-size:36px;color:red; line-height:250px; text-align:center; transition:1s all ease;  opacity:0;}
+.box_l li .bg a{ font-size:20px; color:#FFFFFF; width:250px; display:inline-block;}
+.box_l li:hover .bg{top:0; opacity:0.8}
+.box_r{ width:250px; height:520px;opacity:0.5; margin:10px; border-radius:20px;}
+.lagou .tab{width:840px; overflow:hidden; }
+.tab div{ width:2520px; }
+
+#btn{ height:520px; overflow:hidden; border-radius:20px; background:#0bc2d1;}
+#btn li{ width:100%;height:32%; line-height:170px; text-align:center;margin-bottom:10px;
+	box-shadow:inset 0 0 20px #000,0 15px 2px #000;
+	transition:0.5s all ease;
+	position:relative;left:0;top:0;}
+#btn li a{ font-size:16px; display:inline-block; width:200px; height:160px;}
+#btn li:hover{box-shadow:inset 0 0 20px,0 15px 2px #000;}
+#btn li:active{box-shadow:inset 0 0 20px green,0 0px 2px #000;top:15px; background:#fff}
+</style>
+<script src="js/move.js"></script>
+<script src="js/common.js"></script>
+<!--<script src="js/zuping3.js"></script>-->
+<script>
+	window.onload=function(){
+		var oDiv=document.getElementById('div1');
+		var oDivSon=document.getElementById('oDivson');
+		var aUl=oDiv.getElementsByTagName('ul');
+		var oNext=document.getElementById('next')
+		var now=0;
+		
+		nav('ul1');
+		/*oNext.onclick=tab*/
+		/*function tab(){
+				now++;
+				if(now==aUl.length-1){
+					now=0;;
+				}
+				move(oDivSon,{left:-now*aUl[0].offsetWidth},{time:1000})
+			
+		}
+		var timer=setInterval(function(){
+			tab()
+		},2000)
+		
+		for(var i=0;i<aUl.length;i++){
+			aUl[i].onmouseover=function(){
+				
+				clearInterval(timer)
+			}
+		}
+		for(var i=0;i<aUl.length;i++){
+			aUl[i].onmouseout=function(){
+				if(timer){
+					timer=setInterval(function(){
+						tab()
+					},3000)
+				}
+			}
+		}*/
+	}
+</script>
+</head>
+<body bgcolor="#000">
+    <div class="wrapper">
+        <ul id="ul1">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="zuoping.html">作品</a></li>
+            <li><a href="skill.html" />skill</a></li>
+            <li><a href="contact.html"/>联系我</a></li>
+            <li><a href="" />更多>></a></li>
+            <li class="Navbox"></li>
+        </ul>
+    </div>
+    <div class="wrapper lagou clearFix" id="div1">
+    	<div class="fl tab">
+        	<div id="oDivson" class="clearFix" style="position:relative; left:0;top:0; ">
+                <ul class="fl box_l" name="box_l_1" id="box_l_1">
+                    <li style=" background:url(images/car.jpg) no-repeat; background-size:cover">
+                       
+                        <div class="bg" style=""><a href="chexunwang/index.html" target="_blank">业余时间，模仿车讯网。</a></div>
+                    </li>
+                    <li style=" background:url(images/sina.jpg) no-repeat;background-size:contain">
+                       
+                        <div class="bg"><a href="sina/index.html" target="_blank">业余时间，模仿新浪官网。</a></div>
+                    </li>
+                    <li style=" background:url(images/360movie.jpg) no-repeat;background-size:cover">
+                       
+                        <div class="bg"><a href="360movie/index.html" target="_blank">业余时间，模仿360影视。</a></div>
+                    </li>
+                    <li style=" background:url(images/xiaomi.jpg) no-repeat;background-size:cover">
+                       
+                        <div class="bg"><a href="xiaomi/mi.html" target="_blank">业余时间，模仿小米官司。</a></div>
+                    </li>
+                </ul>  
+                <ul class="fl box_l" name="box_l_2" id="box_l_2">
+                    <li style=" background:url(images/c3-1.jpg) no-repeat center center;background-size:400px 250px">
+                        <div class="bg" style=""><a href="c3-1/css3-1.html" target="_blank">拖拽轮播图</a></div>
+                    </li>
+                    <li style=" background:url(images/c3-2.jpg) no-repeat center center;background-size:400px 250px">
+                        <div class="bg" style=""><a href="c3-2/css3-2.html" target="_blank">拖拽轮播图</a></div>
+                    </li>
+                    <li style=" background:url(images/c3-3.jpg) no-repeat center center;background-size:400px 250px">
+                        <div class="bg" style=""><a href="c3-3/css3-3.html" target="_blank">拖拽轮播图</a></div>
+                    </li>
+                    <li style=" background:url(images/canvas.jpg) no-repeat center center;background-size:400px 250px">
+                        <div class="bg" style=""><a href="canvas.html" target="_blank">canvas报表</a></div>
+                    </li>
+                </ul>  
+                <ul class="fl box_l" name="box_l_3" id="box_l_3">
+                    <li style=" background:url(images/dropbanner.jpg) no-repeat center center;background-size:cover">
+                        <div class="bg" style=""><a href="dropbanner.html" target="_blank">拖拽轮播图</a></div>
+                    </li>
+                    <li style=" background:url(images/pengzhuang.jpg) no-repeat center center;background-size:cover">
+                        <div class="bg"><a href="chromeApps.html" target="_blank">碰撞检测</a></div>
+                    </li>
+                    <li style=" background:url(images/bigpic.jpg) no-repeat center center;background-size:cover">
+                        <div class="bg"><a href="magnifier.html" target="_blank">放大镜效果</a></div>
+                    </li>
+                    <li style=" background:url(images/pictime.jpg) no-repeat;background-size:cover">
+                        <div class="bg"><a href="pictime.html" target="_blank">图片时钟</a></div>
+                    </li>
+                </ul> 
+            </div>   
+        </div>
+        <div class="box_r fr" id="next">
+            <ul id="btn">
+            	<li style="border-radius:20px 20px 0 0"><a href="#box_l_1">HTML-CSS</a></li>
+                <li><a href="#box_l_2">HTML5-css3</a></li>
+                <li style="border-radius:0 0 20px 20px";><a href="#box_l_3">Javascript运动特效</a></li>
+            </ul>
+        </div>
+     </div>
+
+</body>
+</html>

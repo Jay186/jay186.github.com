@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+
+.top{height:70px;border-bottom:2px solid #22ac38;position:relative;}
+.top h1{ width:148px;height:40px; background:url(../images/t015b0a114dfb0c1ff9.png); text-indent:-9999px;margin-top:20px;margin-right:14px;}
+.search{ margin:18px 0 0 12px; }
+.tex{width:442px;height:35px;padding-left:20px;}
+.sousou{width:38px;height:38px; background:url(../images/t01093f7f7119dcfb83.png) no-repeat;}
+
+input:hover .sousou{width:463px;height:400px;border:1px solid red;display:block;}
+
+
+
+.top_r li{float:left;margin-top:27px;}
+.top_r .app{height:26px;line-height:26px; background:url(../images/down.png) no-repeat;padding-left:32px;display:inline-block;}
+.top_r .gkjl{height:26px;line-height:26px; background:url(../images/guankanjilu.png) no-repeat;padding-left:32px;display:inline-block;}
+.top_r .wdys{height:26px;line-height:26px; background:url(../images/wodeyingshi.png) no-repeat;padding-left:32px;display:inline-block;}
+
+
+.nav{height:43px;}
+.nav li {float:left;margin-right:26px;height:43px;line-height:43px;}
+.nav a{font-size:15px;}
+.nav_r li{float:right;margin-left;20px;}
+
+
+.main_pic{height:455px; position:relative; overflow:hidden;}
+.main_pic .text{width:100%;position:absolute;top:280px;left:17px; }
+.text1{font-size:35px;margin-bottom:28px; color:#fff;}
+.text2{font-size:16px;color:#fff;}
+
+
+
+.main_pics{ position:absolute;left:50%;margin-left:-960px;}
+.xuanxiangka{ position:absolute;left:0;top:380px;}
+.xuanxiangka li{float:left;margin-right:15px;}
+.xuanxiangka .bg1{width:95px;height:57px; background:#000;position:absolute;left:0;top:0px;opacity:0.5;}
+.xuanxiangka .bg2{width:95px;height:57px; background:#000;position:absolute;left:113;top:0px;opacity:0.5;}
+.xuanxiangka .bg3{width:95px;height:57px; background:#000;position:absolute;left:113;top:0px;opacity:0.5;}
+.xuanxiangka .bg4{width:95px;height:57px; background:#000;position:absolute;left:113;top:0px;opacity:0.5;}
+.xuanxiangka .bg5{width:95px;height:57px; background:#000;position:absolute;left:113;top:0px;opacity:0.5;}
+.xuanxiangka .bg6{width:95px;height:57px; background:#000;position:absolute;left:113;top:0px;opacity:0.5;}
+.xuanxiangka .bg7{width:95px;height:57px; background:#000;position:absolute;left:113;top:0px;opacity:0.5;}
+.xuanxiangka .bg8{width:95px;height:57px; background:#000;position:absolute;left:113;top:0px;opacity:0.5;}
+.xuanxiangka .bg9{width:95px;height:57px; background:#000;position:absolute;left:113;top:0px;opacity:0.5;}
+.xuanxiangka li:hover .bg2{display:none;}
+.xuanxiangka li:hover .bg3{display:none;}
+.xuanxiangka li:hover .bg4{display:none;}
+.xuanxiangka li:hover .bg5{display:none;}
+.xuanxiangka li:hover .bg6{display:none;}
+.xuanxiangka li:hover .bg7{display:none;}
+.xuanxiangka li:hover .bg8{display:none;}
+.xuanxiangka li:hover .bg9{display:none;}
+
+/*今日热门*/
+.today_top{width:100%;height:33px;margin-top:38px;margin-bottom:20px;}
+.today_top .remen{line-height:33px;font-size:31px;}
+.today_top li{padding-top:13px;}
+.today_top li a{font-size:14px;padding:13px 14px 0 14px;}
+.today_top .zixun{font-size:23px;margin-right:97px;padding-top:5px;}
+
+.today_pic {width:100%;height:288px;}
+.today_pic_l{height:288px; margin-right:6px;}
+.today_pic_l p{ margin-top:15px;}
+
+.today_pic_c{ position:relative;width:380px; height:288px;}
+.today_pic_c li{ float:left;width:180px;height:154px;}
+.today_pic_c li .bg1{width:180px; height:22px;background:#000; position:absolute; left:0;top:78px; opacity:0.5;}
+.today_pic_c li .one1{position:absolute; left:0;top:78px;color:#FFF;}
+.today_pic_c li .bg2{width:180px; height:22px;background:#000; position:absolute; left:180px;;top:78px; opacity:0.5;}
+.today_pic_c li .one2{position:absolute; left:180px;top:78px;color:#FFF;}
+.today_pic_c li .bg3{width:180px; height:22px;background:#000; position:absolute; left:0px;;top:212px; opacity:0.5;}
+.today_pic_c li .one3{position:absolute; left:0;top:212px;color:#FFF;}
+.today_pic_c li .bg4{width:180px; height:22px;background:#000; position:absolute;left:180px;;top:212px;opacity:0.5;}
+.today_pic_c li .one4{position:absolute; left:180px;top:212px;color:#FFF;}
+.today_pic_c li .one5{ padding-top:13px;}
+.today_pic_c li .one6{ padding-top:13px;}
+.today_pic_c li .one7{ padding-top:13px;}
+.today_pic_c li .one8{ padding-top:13px;}
+
+
+.today_pic_r{ position:relative;}
+.today_pic_r_bg{width:240px;height:22px; background:#000; position:absolute;left:0;top:88px;opacity:0.5;}
+.today_pic_r .text{position:absolute;left:0;top:88px; color:#FFF;}
+
+.today_pic_r_b{padding:14px 0 14px 0;}
+.today_pic_r_b p{line-height:28px;}
+
+
+
+/*电视剧*/
+.tv_top{margin-bottom:19px;}
+.tv .dsj{font-size:23px; width:240px;text-align:left;}
+.tv_l{width:570px;}
+.tv_l li{width:180px;}
+.tv_bottom{ width:100%;height:618px;}
+.tv_bottom_l{width:762px;}
+.tv_bottom_l li{ position:relative;width:180px;margin-right:10px;}
+.tv_bottom_l .bg{width:180px;height:24px; background:#000; opacity:0.5; position:absolute;left:0;top:222px;}
+.tv_bottom_l .text p{position:absolute;left:5px;top:222px;font-size:12px;line-height:24px;}
+.tv_bottom_l .text span{position:absolute;left:136px;top:222px;font-size:12px;line-height:24px;}
+
+.tv_bottom_l .text_1{font-size:13px; color:#000;line-height:23px;margin-top:10px; }
+.tv_bottom_l .text_2{font-size:13px; color:#999;line-height:23px;margin-bottom:7px;}
+
+.tv_bottom_r_t li{ position:relative;}
+.tv_bottom_r_t  .with_pic .bg{width:240px;height:22px; background:#000; position:absolute;left:0;top:96px; opacity:0.5;}
+.tv_bottom_r_t  .with_pic i{ position:absolute;left:0;top:84px; font-size:14px;font-style:normal;color:#fff;background:url(../images/dianshiju.png) no-repeat;width:40px;height:40px;line-height:40px; text-align:center;}
+.tv_bottom_r_t  .with_pic span{ position:absolute;left:46px;top:96px;color:#fff;}
+.tv_bottom_r_t  .with_pic p{ position:absolute;right:9px;top:96px;color:#fff;}
+.tv_bottom_r_t  .nowith_pic{width:240px;height:34px;line-height:34px;}
+.tv_bottom_r_t  .nowith_pic i{width:30px;text-align:center;}
+.tv_bottom_r_t  .nowith_pic span{width:134px;}
+.tv_bottom_r_t  .nowith_pic p{ background:url(../images/icon.png) no-repeat left center;padding-left: 18px;}
+.tdy .nowith_pic{ display:none;}
+.tv_bottom_r_t .with_pic{display:none;}
+.tdy .with_pic{display:block;}
+
+.tv_bottom_r_b p{font-size:23px; width:240px;height:70px; line-height:70px;background:#f4f4f4; margin-bottom:10px;}
+.tv_bottom_r_b li{ line-height:28px;}
+.tv_bottom_r_b ul{padding:7px 18px 20px 20px;width:202px;height:85px;}
+
+
+.dy{height:135px;}
+.dy .dy_box li{ position:relative;width:180px;height:135px; margin-right:10px;}
+.dy .dy_box .yugao{ position:absolute;left:0;top:0;}
+.dy .dy_box .bg{position:absolute;left:0;top:78px;width:180px;height:22px; background:#000;}
+.dy .dy_box .text_1{position:absolute;left:0;top:78px;color:#FFF;font-size:12px;}
+.dy .dy_box p{width:180px; text-align:center;margin:13px 0 8px 0;}
+.dy_box_r{position:relative;}
+.dy_box_r .text_1{position:absolute;left:0;top:78px; font-size:12px;color:#FFF;}
+.dy_box_r .bg{position:absolute;left:1px;top:78px; width:238px; height:22px; background:#000;}
+.dy_box_r p{margin-top:14px;}
+
+/*综艺*/
+.zy{width:100%;height:380px; background:#f4f4f4;}
+.zy_top{width:100%;height:45px;}
+.zy .zy_top p{font-size:31px;}
+.zy_top ul{ overflow:hidden;}
+.zy_top li{float:left; border-left:1px solid grey; margin-left:-1px;padding:0 15px 0 15px;margin-top:15px;}
+.zy_top span{font-size:23px;width:240px; text-align:left;}
+.zy_pic_l{ position:relative;margin-right:5px;}
+.zy_pic_l .bg{width:376px;height:22px; background:#000; position:absolute;left:0;top:232px;}
+.zy_pic_l span{ background:url(../images/icon.png) no-repeat left center;padding-left:18px; position:absolute;left:6px;top:232px;color:#fff;}
+.zy_pic_l b{ display:block; font-weight:normal;margin-top:15px;line-height:24px;margin-left:6px;}
+.zy_pic_l p{line-height:24px;margin-left:6px;color:#989898;padding-bottom:15px;}
+
+.zy_pic_c ul{width:380px;}
+.zy_pic_c li{ position:relative; float:left; margin}
+.zy_pic_c .bg{width:180px;height:22px; background:#000; position:absolute;left:0;top:78px;}
+.zy_pic_c span{ background:url(../images/icon.png) no-repeat left center;padding-left:18px; position:absolute;left:6px;top:78px;color:#fff;}
+.zy_pic_c b{ display:block; font-weight:normal;margin-top:9px;line-height:22px;margin-left:6px;}
+.zy_pic_c p{line-height:22px;margin-left:6px;color:#989898; padding-bottom:12px;font-size:12px;}
+
+/*动漫*/
+.dm_r{height:320px; overflow-y:scroll;width:240px;}
+.dm_r_date {height:33px;}
+.dm_r_date a{ display:block;width:31px;height:31px; line-height:32px;background:#eee; float:left; margin-right:1px;}
+.dm_r li{width:166px;height:52px;margin-left:50px;}
+
+.dj ul{width:620px;height:410px;}
+.dj li{ float:left;margin-right:1px;margin-bottom:3px;}
+.dm_r .first{ margin-top:10px; }
+.footer { text-align:center; margin:50px 0 50px 0;}
+.footer p{line-height:20px;}

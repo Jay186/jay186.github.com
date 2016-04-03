@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="智能社 - zhinengshe.com" />
+<meta name="copyright" content="智能社 - zhinengshe.com" />
+<title>放大镜</title>
+<style>
+*{ margin:0; padding:0; list-style:none; font-family: "微软雅黑","张海山锐线体简"}
+body{ background:#cacaca;}
+#div1{width:400px;height:400px; position:relative;}
+#mark{width:80px;height:80px; background:green; opacity:.5; position:absolute;left:0;top:0; display:none;}
+#div2{ position:absolute;left:450px;top:0;width:400px;height:400px; overflow:hidden; display:none;}
+#div2 img{ position:absolute;left:0;top:0}
+</style>
+<script>
+window.onload=function(){
+	var oDiv1=document.getElementById('div1');
+	var oDiv2=document.getElementById('div2');
+	var oBigImg=document.getElementById('bigImg');
+	var oMark=document.getElementById('mark');
+	oDiv1.onmouseover=function(){
+		oMark.style.display='block';
+		oDiv2.style.display='block';	
+	};	
+	oDiv1.onmouseout=function(){
+		oMark.style.display='none';
+		oDiv2.style.display='none';	
+	};	
+	oDiv1.onmousemove=function(ev){
+		var oEvt=ev||event;
+		var l=oEvt.clientX-oMark.offsetWidth/2;//计算
+		var t=oEvt.clientY-oMark.offsetHeight/2;
+		
+		//限定
+		if(l<0) l=0;
+		if(l>oDiv1.offsetWidth-oMark.offsetWidth)
+			l=oDiv1.offsetWidth-oMark.offsetWidth;
+		if(t<0) t=0;
+		if(t>oDiv1.offsetHeight-oMark.offsetHeight)
+			t=oDiv1.offsetHeight-oMark.offsetHeight;
+		
+		oMark.style.left=l+'px';//使用
+		oMark.style.top=t+'px';	
+		
+		//修改大图的坐标
+		//bigImg.left=mark.left/(div1.w-mark.w)*(bigImg.w-div2.w)
+		oBigImg.style.left=-oMark.offsetLeft/(oDiv1.offsetWidth-oMark.offsetWidth)*(oBigImg.offsetWidth-oDiv2.offsetWidth)+'px';
+		oBigImg.style.top=-oMark.offsetTop/(oDiv1.offsetHeight-oMark.offsetHeight)*(oBigImg.offsetHeight-oDiv2.offsetHeight)+'px';
+		
+		
+		
+	};
+};
+</script>
+</head>
+
+<body>
+
+<div id="div1">
+	<img src="images/img/m1.jpg">
+    <div id="mark"></div>
+</div>
+<div id="div2">
+    <img src="images/img/b1.jpg" id="bigImg">
+</div>
+
+</body>
+</html>

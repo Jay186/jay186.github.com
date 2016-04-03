@@ -1,0 +1,63 @@
+*{margin:0; padding:0;}
+body{
+	background:rgba(2,2,2,1);overflow:hidden;
+}
+#div2 {
+	position:absolute; left:50%; top:50%; width:1200px; height:1200px; 
+	
+	background:-webkit-radial-gradient(center center, 600px 600px ,rgba(50,50,50,1), rgba(0,0,0,0));
+	background:-moz-radial-gradient(center center, 600px 600px ,rgba(50,50,50,1), rgba(0,0,0,0));
+	background:-ms-radial-gradient(center center, 600px 600px ,rgba(50,50,50,1), rgba(0,0,0,0));
+	background:-o-radial-gradient(center center, 600px 600px ,rgba(50,50,50,1), rgba(0,0,0,0));
+	background:radial-gradient(center center, 600px 600px ,rgba(50,50,50,1), rgba(0,0,0,0));
+	
+	margin-left:-600px; margin-top:-600px;
+	-webkit-transform:translateY(200px) rotateX(90deg);
+	-moz-transform:translateY(200px) rotateX(90deg);
+	-ms-transform:translateY(200px) rotateX(90deg);
+	-o-transform:translateY(200px) rotateX(90deg);
+	transform:translateY(200px) rotateX(90deg);
+}
+#div1 {width:200px; height:200px; position:relative; margin:150px auto;
+	background:null;
+	
+	-webkit-transform:perspective(1000px) rotateX(-10deg) rotateY(0deg);
+	-moz-transform:perspective(1000px) rotateX(-10deg) rotateY(0deg);
+	-ms-transform:perspective(1000px) rotateX(-10deg) rotateY(0deg);
+	-o-transform:perspective(1000px) rotateX(-10deg) rotateY(0deg);
+	transform:perspective(1000px) rotateX(-10deg) rotateY(0deg);
+	
+	-webkit-transform-style:preserve-3d;
+	-moz-transform-style:preserve-3d;
+	-ms-transform-style:preserve-3d;
+	-o-transform-style:preserve-3d;
+	transform-style:preserve-3d;
+}
+#div1 div.hid {position:absolute; left:50%; margin-left:-67px; margin-top:-90px; top:50%; background-size:100% 100%; font-size:50px;
+	-webkit-transition:1s all ease;
+	-moz-transition:1s all ease;
+	-ms-transition:1s all ease;
+	-o-transition:1s all ease;
+	transition:1s all ease;
+
+	overflow:hidden; width:153px; height:400px;
+	
+	-webkit-transform:rotateY(0deg) translateZ(0px);
+	-moz-transform:rotateY(0deg) translateZ(0px);
+	-ms-transform:rotateY(0deg) translateZ(0px);
+	-o-transform:rotateY(0deg) translateZ(0px);
+	transform:rotateY(0deg) translateZ(0px);
+}
+#div1 div.img {top:10px; left:10px; margin:0; box-shadow:0 0 10px white; width:133px; height:200px; position:absolute; border-radius:2px;}
+
+#div1 div.img .shadow { position:absolute; left:0; top:-102px; width:133px; height:200px;
+	background-size:100% 100%;
+	opacity:0.2;
+}
+#div1 div .over {position:absolute; left:0; top:214px; width:133px; height:100px; overflow:-hidden;
+	-webkit-transform:scale(1,-1);
+	-moz-transform:scale(1,-1);
+	-ms-transform:scale(1,-1);
+	-o-transform:scale(1,-1);
+	transform:scale(1,-1);
+}

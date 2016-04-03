@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ margin:0; padding:0; }
+a{ text-decoration:none; }
+li{ list-style:none; }
+textarea{ resize:none; }
+img{ vertical-align:top; }
+input,select,textarea{ outline:none; }
+textarea{resize:none;}
+
+.fl{float:left;display::inline;}
+.fr{float:right;display:inline;}
+.clearFix:{ content'';dislplay:block;clear:both;}
+
+body{ font-size:14px; color:#333;font-family:'\5FAE\8F6F\96C5\9ED1' }
+.wrapper{ width:1002px; margin:0 auto;}
+
+a{color:#333;}

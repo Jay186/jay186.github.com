@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<style>
+body{ background:#cacaca}
+#div1{ width:700px; height:400px; position:relative; background:url(img2/0.jpg) no-repeat; margin:100px auto;}
+#div1 .page2{ width:350px; height:100%; background:url(img2/1.jpg) no-repeat right center; position:absolute; right:0; top:0; z-index:1;}
+#div1 .page{ width:350px; height:400px; position:absolute; right:0; top:0;z-index:2;
+	/*transition:1s all ease;*/
+	transform-style:preserve-3d;
+	 transform-origin:left;
+	transform:perspective(800px) rotateY(0deg);
+}
+
+
+#div1 .page div{ width:100%; height:100%; position:absolute;}
+#div1 .page .front{ position:absolute; background:yellow; background:url(img2/0.jpg) right center; z-index:2;
+	transform:translateZ(1px);;
+}
+#div1 .page .back{ position:absolute; background:url(img2/1.jpg) no-repeat; z-index:1;
+	transform:translateZ(-1px) scale(-1,1);
+}
+/*#div1:active .page{ transform:perspective(800px)  rotateY(-180deg)}*/
+</style>
+<script>
+window.onload=function(){
+	var oDiv=document.getElementById('div1');
+	var oPage=oDiv.querySelector('.page');
+	var oFront=oDiv.querySelector('.front');
+	var oBack=oDiv.querySelector('.back');
+	var oPage2=oDiv.querySelector('.page2');
+	
+	var bReady=true;
+	var now=0;
+	oDiv.onclick=function(){
+		if(!bReady) return;
+		bReady=true;
+		now++;
+		oPage.style.transition='1s all ease';
+		oPage.style.transform='perspective(800px) rotateY(-180deg)';
+		
+	}
+	oPage.addEventListener('transitionend',function(){
+		oPage.style.transition = "none";
+		oPage.style.transform = "perspective(800px) rotateY(0deg)";
+		
+		oDiv.style.backgroundImage='url(img2/'+now%3+'.jpg)';
+		oFront.style.backgroundImage='url(img2/'+now%3+'.jpg)';
+		oBack.style.backgroundImage='url(img2/'+(now+1)%3+'.jpg)';
+		oPage2.style.backgroundImage='url(img2/'+(now+1)%3+'.jpg)';
+	},false)
+}
+</script>
+</head>
+<body>
+<div id="div1">
+	<div class="page">
+    	<div class="front">1-1</div>
+        <div class="back">1-2</div>
+    </div>
+    <div class="page2">2</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="智能社 - zhinengshe.com" />
+<meta name="copyright" content="智能社 - zhinengshe.com" />
+<title>周界个人作品</title>
+<style>
+body,div,h1,h2,h3,h4,h5,h6,p,ul,ol,li,dl,dd,dt,span,a,b,em,i,strong,img{ padding:0; margin:0;}
+li{ list-style:none;}
+a{ text-decoration:none;}
+textarea{ resize:none; }
+input,select,textarea{ outline:none; }
+img{ border:0;}
+img,input,select,textarea{ vertical-align:top; }
+
+.fl{ float:left; display:inline;}
+.fr{ float:right; display:inline;}
+.clearFix:after{ content:''; display:block; clear:both;}
+.clearFix{ zoom:1;}
+
+body{ font-size:12px; font-family:'\5FAE\8F6F\96C5\9ED1';}
+.wrapper{ width:1110px; margin:0 auto; }
+
+#ul1{ position:relative; width:1110px; height:114px;background:#05a6b3; border-radius:20px;}
+#ul1 li{ position:relative; z-index:2;float:left;width:220px; height:114px; line-height:114px; text-align:center; border-left: 2px ridge rgba(98, 201, 209, 0.298039);border-radius:20px;}
+#ul1 li a{ float:left; width:100px; height:100px;margin: 0px 50px; font-size:15px; color:#FFF; font-weight:bold;}
+#ul1 li.Navbox{ position:absolute;left:0;top:0; background:#0bc2d1; z-index:1;}
+
+<!--技能展示-->
+.skill_box{}
+.skill_box p{ position:absolute;font-size:30px; font-family:weiruanyahei; color:#fff;}
+.skill_box .p1{ position:absolute; top:160px; left:-120px;margin-left:-109px; opacity:0;}
+.skill_box .p2{ position:absolute; top:200px; right:-370px; margin-left:-180px;opacity:0;}
+.Portrait{ width:150px; height:150px; margin:0 auto; border-radius:50%;}
+.text{ width:100%;  position:relative; font-size:16px; margin:20px auto; line-height:26px;}
+
+.html_text{ width:700px; height:300px; margin:0 auto;text-indent:2em; position:relative; overflow:hidden; margin-top:100px; font-family:weiruanyahei; color:#fff;}
+/*.js_text{ width:302px; height:350px; position:absolute; left:700px; z-index:10;}*/
+.html_text_1{ position:absolute; top:350px;}
+.html_text_2{ position:absolute; top:500px;}
+
+</style>
+<script src="js/move.js"></script>
+<script src="js/common.js"></script>
+<script>
+window.onload=function(){
+	nav('ul1');
+	var oSkill_box=document.getElementById('skill_box');
+	var oP1=oSkill_box.children[1];
+	var oP2=oSkill_box.children[2];
+	var oHtml_text=document.getElementById('html_text');
+	var aLi=oHtml_text.children;
+	var oP3=oHtml_text.children[0];
+	var oP4=oHtml_text.children[1];
+	function zj(){
+		move(oP1,{left:570, opacity:1},{time:2000});
+		move(oP2,{right:350, opacity:1},{time:2000});
+		
+		clearInterval(timer)
+		
+		var timer=setInterval(function(){
+			move(oP3,{top:0, opacity:1},{time:1500});
+			
+			move(oP4,{top:150, opacity:1},{time:2000});
+		},500)
+		
+		
+	}
+	zj();
+	
+	
+}
+</script>
+</head>
+<body bgcolor="#000">
+    <div class="wrapper">
+        <ul id="ul1">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="zuoping.html">作品</a></li>
+            <li><a href="skill.html" >skill</a></li>
+            <li><a href="contact.html">联系我</a></li>
+            <li><a href="">更多>></a></li>
+            <li class="Navbox"></li>
+        </ul>
+    </div>
+    
+    <!--技能展示-->
+    <div class="wrapper">
+    	<div class="skill_box" id="skill_box" style=" width:100%; height:550px;position:relative;">
+        	<div class="Portrait"><img width="150" height="150" src="images/zj1.png"></div>
+            <p class="p1">Hello!!!  I'm Jay.</p>
+            <p class="p2">一个认真,热爱前端的工程师</p>
+            <div class="text">
+				<ol class="html_text" id="html_text">
+                	<li class="html_text_1">
+                   <b> HTML&CSS：</b>
+对Web标准的理解、浏览器内核差异、兼容性、hack、CSS基本功：布局、盒子模型、选择器优先级及使用、document flow（文档流）、清除浮动，HTML5（离线 & 存储，多媒体，canvas 绘图）、CSS3、Flexbox、CSS预编译、动画、rem布局、响应式布局、移动端开发。
+                    </li>
+                    <li class="html_text_2">
+                    <b>JavaScript：</b>
+数据类型、数组、DOM、BOM、面向对象、继承、闭包、内置对象、作用域、跨域、原型链、RegExp、模块化、内存泄漏、事件机制、异步装载回调、模板引擎、前端MVC、JSON、ajax、框架、算法、PHP、NodeJS等
+                    </li>
+				</ol>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
